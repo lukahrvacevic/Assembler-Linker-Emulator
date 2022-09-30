@@ -119,4 +119,5 @@ including more classes and more methods.
 - Translating error output and comments from Serbian to English
 - Find a Windows replacement for <termios.h> header: Right now this
 toolchain can only be built and run on Linux
+- Replace usages of exit with exceptions
 
