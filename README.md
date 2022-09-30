@@ -21,7 +21,7 @@ assembler [options] <input_file_name>
 
 Options:
 
-<u>-o <output_file_name></u>
+<u>-o <output_file_name></u><br>
 This option sets the output file name parameter for the output file that is
 the result of assembling.
 
@@ -40,21 +40,21 @@ linker [options] <input_file_name> [<input_file2_name> ...]
 
 Options:
 
-<u>-o <output_file_name></u>
+<u>-o <output_file_name></u><br>
 This option sets the output file name parameter for the output file that is
 the result of linking.
 
-<u>-place=<section_name>@<address></u>
+<u>-place=<section_name>@<address></u><br>
 This option sets the address for the section specified with the 
 section name. 
 
-<u>-hex</u>
+<u>-hex</u><br>
 This option tells the linker to try to generate an executable file that
 can then be an input to the emulator. Linking is only successful if there are
 no multiple definitions for the same symbol, no unresolved symbols and no
 overlap between the sections which starting addresses are defined by the place option.
 
-<u>-relocateable</u>
+<u>-relocateable</u><br>
 This option tells the linker to generate an object program, in the same format
 as the output of the assembler, ignoring the place options defined by the user.
 
