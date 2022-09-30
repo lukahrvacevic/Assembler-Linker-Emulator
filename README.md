@@ -67,6 +67,8 @@ overlap between the sections which starting addresses are defined by the place o
 This option tells the linker to generate an object program, in the same format
 as the output of the assembler, ignoring the place options defined by the user.
 
+**NOTE: ** One and only one of hex and relocateable options must be turned on for the linker to have an output.
+
 Example of startup:
 
 ``` bash
