@@ -1,10 +1,10 @@
-#Assembler-Linker-Emulator
+# Assembler-Linker-Emulator
 Implementation of a toolchain consisting of an assembler, a linker and an emulator,
 similar to the GNU one, made for a hypothethical 16-bit architecture explained 
 in detail in the documentation, where you can find all the supported instructions
 and directives, as well as a guide on how to use the implemented timer and terminal peripheries.
 
-##Build
+## Build
 
 By running the following command:
 ``` bash
@@ -12,7 +12,7 @@ $ ./build.sh
 ```
 three executable programs will be generated: **assembler**, **linker** and **emulator**.
 
-###Assembler
+### Assembler
 
 This tool is used as follows
 ``` bash
@@ -31,7 +31,7 @@ Example of startup:
 ./assembler -o output.o input.s
 ```
 
-###Linker
+### Linker
 
 This tool is used as follows
 ``` bash
@@ -64,7 +64,7 @@ Example of startup:
 ./linker -hex -place=iv_table@0x0000 -place=text@0x4000 -o mem_content.hex input1.s input2.s
 ```
 
-###Emulator
+### Emulator
 
 This tool is used as follows
 ``` bash
@@ -77,7 +77,7 @@ Example of startup:
 ./emulator mem_content.hex
 ```
 
-##Tests
+## Tests
 
 In the tests folder, some tests written to test the functionalities of the toolchain can
 be found. Example of a shell script necessary to run the timerTest:
@@ -95,7 +95,7 @@ ${LINKER} -hex -o program.hex -place=ivt@0x0000 ivt.o main.o timer_int.o
 ${EMULATOR} program.hex
 ```
 
-##To-do
+## To-do
 
 - Code refactorization: This project was done in a hurry, so the code
 is not very comprehensible, needs to be broken down into smaller parts
