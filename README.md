@@ -44,7 +44,7 @@ Options:
 This option sets the output file name parameter for the output file that is
 the result of linking.
 
-<u>-place=<section_name>@<address></u><br>
+<u>-place=<section_name>@<start_address></u><br>
 This option sets the address for the section specified with the 
 section name. 
 
